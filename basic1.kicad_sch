@@ -536,6 +536,28 @@
 			(embedded_fonts no)
 		)
 	)
+	(junction
+		(at 180.34 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "58213788-48af-4f65-9f25-1c6a0081c343")
+	)
+	(junction
+		(at 127 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6bd3af3f-12bd-45e4-95fd-4fa42a36b807")
+	)
+	(wire
+		(pts
+			(xy 160.02 62.23) (xy 180.34 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ae32d27-90fd-4ee4-9c5a-0aedf6cd600a")
+	)
 	(wire
 		(pts
 			(xy 127 80.01) (xy 127 72.39)
@@ -598,6 +620,26 @@
 	)
 	(wire
 		(pts
+			(xy 127 62.23) (xy 127 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64f09950-32eb-4408-b70f-d02074714867")
+	)
+	(wire
+		(pts
+			(xy 180.34 62.23) (xy 180.34 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72fdea90-68e2-4c62-bc12-939592266fbe")
+	)
+	(wire
+		(pts
 			(xy 180.34 72.39) (xy 180.34 81.28)
 		)
 		(stroke
@@ -605,6 +647,16 @@
 			(type default)
 		)
 		(uuid "732565dc-b312-440d-ae19-9e9a12b20a7c")
+	)
+	(wire
+		(pts
+			(xy 152.4 62.23) (xy 127 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c11ecd83-5823-4fc2-b34e-974ea323b57a")
 	)
 	(symbol
 		(lib_id "Device:Battery")
@@ -671,6 +723,83 @@
 			(project ""
 				(path "/ae09a829-f66c-42b3-baaa-271b279764a4"
 					(reference "BT1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 156.21 62.23 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "89c5a445-5ecd-44bd-be18-2209238c9f4f")
+		(property "Reference" "D2"
+			(at 157.7975 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 157.7975 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 156.21 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 156.21 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 156.21 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 156.21 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3422164b-ce5a-439a-825c-19cd326169bd")
+		)
+		(pin "2"
+			(uuid "a6f4887b-848f-4c58-a524-68db8bd2a436")
+		)
+		(instances
+			(project "basic1"
+				(path "/ae09a829-f66c-42b3-baaa-271b279764a4"
+					(reference "D2")
 					(unit 1)
 				)
 			)
